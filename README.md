@@ -2,8 +2,6 @@
 
 Một website portfolio cá nhân hiện đại, responsive, dùng để giới thiệu bản thân, kỹ năng, kinh nghiệm và các dự án đã làm. Project được xây dựng bằng React, Vite và TailwindCSS với dark mode, hiệu ứng mượt và form liên hệ.
 
-> ⚠️ Lưu ý: Nội dung demo trong code (tên công ty, dự án, chứng chỉ, email, social links, CV, v.v.) đang là dữ liệu mẫu – bạn cần đổi lại thông tin thật của mình.
-
 ## ✨ Tính năng chính
 
 - Giao diện hiện đại, tối ưu cho desktop, tablet, mobile
@@ -127,9 +125,9 @@ npm run build
 
 ## 📞 Liên hệ
 
-- Email: your.email@domain.com
+- Email: haolq0711@gmail.com
 - LinkedIn: https://linkedin.com/in/yourprofile
-- GitHub: https://github.com/yourusername
+- GitHub: https://github.com/C-HaoNguyen
 
 Bạn có thể chỉnh các thông tin này trực tiếp trong code cho khớp với profile thật.
 

@@ -21,10 +21,10 @@ const Header = () => {
     const navItems = [
         { name: 'Trang chủ', href: '#home' },
         { name: 'Giới thiệu', href: '#about' },
-        { name: 'Ky nang', href: '#skills' },
-        { name: 'Du an', href: '#projects' },
-        { name: 'Kinh nghiem', href: '#experience' },
-        { name: 'Lien he', href: '#contact' },
+        { name: 'Kỹ năng', href: '#skills' },
+        { name: 'Dự án', href: '#projects' },
+        { name: 'Kinh nghiệm', href: '#experience' },
+        { name: 'Liên hệ', href: '#contact' },
     ];
 
     const toggleDarkMode = () => {
@@ -68,7 +68,7 @@ const Header = () => {
 
                     <Button href="/resume.pdf" className="hidden sm:inline-flex" size="sm">
                         <Download className="h-4 w-4" />
-                        Tai CV
+                        Tải CV
                     </Button>
 
                     <button
