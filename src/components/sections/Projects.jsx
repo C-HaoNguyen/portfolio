@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, Github, Eye, Filter } from 'lucide-react';
+import { ExternalLink, Github, Eye, Filter, GithubIcon, Code } from 'lucide-react';
 import Button from '../common/Button';
 
 const Projects = () => {
@@ -9,24 +9,26 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: 'E-Commerce Platform',
-            description: 'Ứng dụng thương mại điện tử full-stack với React, Node.js, và MongoDB. Hỗ trợ thanh toán online, quản lý kho, và admin dashboard.',
+            title: 'Education Platform',
+            description: 'Nền tảng quản lý khóa học full-stack với React, Java/Spring Boot, và PostgreSQL. Hỗ trợ thanh toán online, quản lý kho, và admin dashboard.',
             image: '/api/placeholder/400/300',
-            technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'TailwindCSS'],
+            technologies: ['React', 'Java', 'PostgreSQL', 'TailwindCSS'],
             category: 'fullstack',
-            liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
+            liveUrl: 'https://academic-management-website.onrender.com/',
+            frontEndRepoUrl: 'https://github.com/C-HaoNguyen/academic-management-website',
+            backEndRepoUrl: 'https://github.com/C-HaoNguyen/academic-management-api',
             featured: true
         },
         {
             id: 2,
-            title: 'Task Management App',
-            description: 'Ứng dụng quản lý công việc với tính năng real-time collaboration, drag & drop, và notifications.',
+            title: 'Japan Restaurant Website',
+            description: 'Website quản lý nhà hàng Nhật Bản với React, Node.js, và MongoDB. Tính năng đặt bàn trực tuyến, menu tương tác, và chat hỗ trợ khách hàng.',
             image: '/api/placeholder/400/300',
-            technologies: ['Vue.js', 'Express', 'Socket.io', 'PostgreSQL'],
+            technologies: ['React', 'Node.js', 'MongoDB'],
             category: 'frontend',
             liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
+            frontEndRepoUrl: 'https://github.com/phvghuy/restaurant-management',
+            backEndRepoUrl: 'https://github.com/phvghuy/restaurant-management',
             featured: true
         },
         {
@@ -37,7 +39,7 @@ const Projects = () => {
             technologies: ['Next.js', 'Chart.js', 'OpenWeather API', 'Vercel'],
             category: 'frontend',
             liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
+            frontEndRepoUrl: 'https://github.com/yourusername/project',
             featured: false
         },
         {
@@ -48,7 +50,8 @@ const Projects = () => {
             technologies: ['React', 'Django', 'PostgreSQL', 'Redis'],
             category: 'fullstack',
             liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
+            frontEndRepoUrl: 'https://github.com/yourusername/project',
+            backEndRepoUrl: 'https://github.com/yourusername/project',
             featured: true
         },
         {
@@ -58,8 +61,8 @@ const Projects = () => {
             image: '/api/placeholder/400/300',
             technologies: ['React Native', 'Figma', 'Lottie', 'Redux'],
             category: 'mobile',
-            liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
+            liveUrl: '',
+            frontEndRepoUrl: 'https://github.com/yourusername/project',
             featured: false
         },
         {
@@ -70,31 +73,9 @@ const Projects = () => {
             technologies: ['Python', 'FastAPI', 'TensorFlow', 'Docker'],
             category: 'backend',
             liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
+            backEndRepoUrl: 'https://github.com/yourusername/project',
             featured: false
         },
-        {
-            id: 7,
-            title: 'Social Media Analytics',
-            description: 'Platform phân tích social media với real-time data processing và visualization.',
-            image: '/api/placeholder/400/300',
-            technologies: ['React', 'D3.js', 'Node.js', 'Elasticsearch'],
-            category: 'fullstack',
-            liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
-            featured: false
-        },
-        {
-            id: 8,
-            title: 'IoT Dashboard',
-            description: 'Dashboard để monitor và control IoT devices với real-time updates.',
-            image: '/api/placeholder/400/300',
-            technologies: ['Vue.js', 'MQTT', 'InfluxDB', 'Grafana'],
-            category: 'frontend',
-            liveUrl: 'https://example.com',
-            githubUrl: 'https://github.com/yourusername/project',
-            featured: false
-        }
     ];
 
     const categories = [
@@ -124,8 +105,11 @@ const Projects = () => {
                     <a href={project.liveUrl} className="rounded-full bg-white p-3 text-slate-800 transition hover:bg-sky-600 hover:text-white" title="View Live">
                         <ExternalLink className="h-5 w-5" />
                     </a>
-                    <a href={project.githubUrl} className="rounded-full bg-white p-3 text-slate-800 transition hover:bg-sky-600 hover:text-white" title="View Code">
-                        <Github className="h-5 w-5" />
+                    <a href={project.frontEndRepoUrl} className="rounded-full bg-white p-3 text-slate-800 transition hover:bg-sky-600 hover:text-white" title="View Frontend Code">
+                        <GithubIcon className="h-5 w-5" />
+                    </a>
+                    <a href={project.backEndRepoUrl} className="rounded-full bg-white p-3 text-slate-800 transition hover:bg-sky-600 hover:text-white" title="View Backend Code">
+                        <GithubIcon className="h-5 w-5" />
                     </a>
                 </div>
             </div>
@@ -154,8 +138,11 @@ const Projects = () => {
                     <a href={project.liveUrl} className="inline-flex items-center gap-1 text-sky-600 hover:text-sky-700 dark:text-sky-400">
                         <Eye className="h-4 w-4" /> Xem demo
                     </a>
-                    <a href={project.githubUrl} className="inline-flex items-center gap-1 text-slate-600 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400">
-                        <Github className="h-4 w-4" /> Code
+                    <a href={project.frontEndRepoUrl} className="inline-flex items-center gap-1 text-slate-600 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400">
+                        <Code className="h-4 w-4" /> Front-end
+                    </a>
+                    <a href={project.backEndRepoUrl} className="inline-flex items-center gap-1 text-slate-600 hover:text-sky-600 dark:text-slate-300 dark:hover:text-sky-400">
+                        <Code className="h-4 w-4" /> Tài liệu
                     </a>
                 </div>
             </div>

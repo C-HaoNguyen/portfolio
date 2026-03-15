@@ -6,18 +6,18 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const quickLinks = [
-        { name: 'Trang chu', href: '#home' },
-        { name: 'Gioi thieu', href: '#about' },
-        { name: 'Ky nang', href: '#skills' },
-        { name: 'Du an', href: '#projects' },
-        { name: 'Kinh nghiem', href: '#experience' },
-        { name: 'Lien he', href: '#contact' },
+        { name: 'Trang chủ', href: '#home' },
+        { name: 'Giới thiệu', href: '#about' },
+        { name: 'Kỹ năng', href: '#skills' },
+        { name: 'Dự án', href: '#projects' },
+        { name: 'Kinh nghiệm', href: '#experience' },
+        { name: 'Liên hệ', href: '#contact' },
     ];
 
     const socialLinks = [
-        { icon: Github, name: 'GitHub', url: 'https://github.com/yourusername' },
-        { icon: Linkedin, name: 'LinkedIn', url: 'https://linkedin.com/in/yourprofile' },
-        { icon: Mail, name: 'Email', url: 'mailto:your.email@domain.com' },
+        { icon: Github, name: 'GitHub', url: 'https://github.com/C-HaoNguyen' },
+        { icon: Linkedin, name: 'LinkedIn', url: 'https://www.linkedin.com/in/nguyentancaohao' },
+        { icon: Mail, name: 'Email', url: 'haolq0711@gmail.com' },
     ];
 
     return (
@@ -28,20 +28,20 @@ const Footer = () => {
                         Port<span className="text-sky-600 dark:text-sky-400">folio</span>
                     </h3>
                     <p className="mt-4 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                        Full Stack Developer tao ra san pham web tinh gon, nhanh va de scale.
+                        Full Stack Developer tạo ra sản phẩm web tinh gọn, nhanh và dễ scale.
                     </p>
                     <div className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
                         <p className="flex items-center gap-2">
-                            <MapPin className="h-4 w-4 text-sky-600 dark:text-sky-400" /> TP. Ho Chi Minh
+                            <MapPin className="h-4 w-4 text-sky-600 dark:text-sky-400" /> TP. Hồ Chí Minh, Việt Nam
                         </p>
                         <p className="flex items-center gap-2">
-                            <Mail className="h-4 w-4 text-sky-600 dark:text-sky-400" /> your.email@domain.com
+                            <Mail className="h-4 w-4 text-sky-600 dark:text-sky-400" /> haolq0711@gmail.com
                         </p>
                     </div>
                 </div>
 
                 <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white">Dieu huong</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white">Điều hướng</h4>
                     <ul className="mt-4 space-y-2 text-sm">
                         {quickLinks.map((link) => (
                             <li key={link.name}>
@@ -54,7 +54,7 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white">Dich vu</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white">Dịch vụ</h4>
                     <ul className="mt-4 space-y-2 text-sm text-slate-600 dark:text-slate-300">
                         <li>Website Development</li>
                         <li>UI/UX Implementation</li>
@@ -64,9 +64,9 @@ const Footer = () => {
                 </div>
 
                 <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white">Ket noi</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white">Kết nối</h4>
                     <p className="mt-4 text-sm text-slate-600 dark:text-slate-300">
-                        San sang hop tac voi du an freelance va full-time.
+                        Sẵn sàng hợp tác với các dự án freelance và full-time.
                     </p>
                     <div className="mt-4 flex gap-3">
                         {socialLinks.map((social) => {
@@ -88,7 +88,7 @@ const Footer = () => {
 
             <div className="mx-auto mt-10 flex w-full max-w-6xl flex-col items-center justify-between gap-4 border-t border-slate-200 px-4 pt-6 text-sm sm:flex-row sm:px-6 lg:px-8 dark:border-slate-800">
                 <p className="flex items-center gap-1 text-slate-600 dark:text-slate-300">
-                    © {currentYear} Portfolio. Made with <Heart className="h-4 w-4 text-rose-500" /> by Ban.
+                    © {currentYear} Portfolio. Made with by Nguyen Tan Cao Hao.
                 </p>
                 <button
                     onClick={scrollToTop}
