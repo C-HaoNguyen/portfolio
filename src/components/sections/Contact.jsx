@@ -17,14 +17,14 @@ const Contact = () => {
         {
             icon: Mail,
             title: 'Email',
-            info: 'your.email@domain.com',
-            action: 'mailto:your.email@domain.com'
+            info: 'haolq0711@gmail.com',
+            action: 'mailto:haolq0711@gmail.com'
         },
         {
             icon: Phone,
             title: 'Điện thoại',
-            info: '+84 123 456 789',
-            action: 'tel:+84123456789'
+            info: '+84 869 066 421',
+            action: 'tel:+84869066421'
         },
         {
             icon: MapPin,
@@ -88,10 +88,10 @@ const Contact = () => {
             <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">
-                        Lien he voi <span className="text-sky-600 dark:text-sky-400">toi</span>
+                        Thông tin <span className="text-sky-600 dark:text-sky-400">liên hệ</span>
                     </h2>
                     <p className="mx-auto max-w-2xl text-lg text-slate-600 dark:text-slate-300">
-                        Neu ban dang co du an moi, can review san pham hoac muon hop tac, hay gui cho toi mot tin nhan.
+                        Nếu bạn đang có dự án mới, cần review sản phẩm hoặc muốn hợp tác, hãy gửi cho tôi một tin nhắn.
                     </p>
                 </div>
 
@@ -126,7 +126,7 @@ const Contact = () => {
 
                         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-900">
                             <h3 className="mb-4 font-semibold text-slate-900 dark:text-white">
-                                Theo doi toi
+                                Theo dõi tôi
                             </h3>
                             <div className="flex space-x-4">
                                 {socialLinks.map((social, index) => {
@@ -148,10 +148,10 @@ const Contact = () => {
                         <div className="rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-600 p-6 text-white">
                             <div className="flex items-center space-x-3 mb-3">
                                 <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
-                                <span className="font-semibold">San sang nhan du an moi</span>
+                                <span className="font-semibold">Sẵn sàng nhận dự án mới</span>
                             </div>
                             <p className="text-emerald-100 text-sm">
-                                Hien tai toi co lich trong cho freelance va full-time opportunities.
+                                Hiện tại tôi có lịch trình rảnh cho các cơ hội freelance và full-time.
                             </p>
                         </div>
                     </div>
@@ -159,13 +159,13 @@ const Contact = () => {
                     <div className="lg:col-span-2">
                         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8 dark:border-slate-800 dark:bg-slate-900">
                             <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-white">
-                                Gui tin nhan cho toi
+                                Gửi tin nhắn cho tôi
                             </h3>
 
                             {isSubmitted && (
                                 <div className="mb-6 flex items-center space-x-2 rounded-lg bg-emerald-100 p-4 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-400">
                                     <CheckCircle className="w-5 h-5" />
-                                    <span>Cam on ban. Tin nhan da duoc gui va toi se phan hoi som nhat co the.</span>
+                                    <span>Cảm ơn bạn. Tin nhắn đã được gửi và tôi sẽ phản hồi sớm nhất có thể.</span>
                                 </div>
                             )}
 
@@ -173,7 +173,7 @@ const Contact = () => {
                                 <div className="grid md:grid-cols-2 gap-6">
                                     <div>
                                         <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                            Ho va ten *
+                                            Họ và tên *
                                         </label>
                                         <input
                                             type="text"
@@ -183,7 +183,7 @@ const Contact = () => {
                                             onChange={handleInputChange}
                                             required
                                             className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 transition focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
-                                            placeholder="Nhap ho va ten cua ban"
+                                            placeholder="Nhập họ và tên của bạn"
                                             disabled={isSubmitting}
                                         />
                                     </div>
@@ -207,7 +207,7 @@ const Contact = () => {
 
                                 <div>
                                     <label htmlFor="subject" className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                        Chu de *
+                                        Chủ đề *
                                     </label>
                                     <input
                                         type="text"
@@ -217,14 +217,14 @@ const Contact = () => {
                                         onChange={handleInputChange}
                                         required
                                         className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 transition focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
-                                        placeholder="Du an website, tu van ky thuat, partnership..."
+                                        placeholder="Dự án website, tư vấn kỹ thuật, partnership..."
                                         disabled={isSubmitting}
                                     />
                                 </div>
 
                                 <div>
                                     <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-700 dark:text-slate-300">
-                                        Tin nhan *
+                                        Tin nhắn *
                                     </label>
                                     <textarea
                                         id="message"
@@ -234,7 +234,7 @@ const Contact = () => {
                                         required
                                         rows={6}
                                         className="w-full resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 transition focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 dark:border-slate-700 dark:bg-slate-950 dark:text-white"
-                                        placeholder="Hay mo ta chi tiet ve du an hoac yeu cau ban can ho tro..."
+                                        placeholder="Hãy mô tả chi tiết về dự án hoặc yêu cầu bạn cần hỗ trợ..."
                                         disabled={isSubmitting}
                                     ></textarea>
                                 </div>
@@ -243,12 +243,12 @@ const Contact = () => {
                                     {isSubmitting ? (
                                         <>
                                             <LoadingSpinner size="sm" className="border-white/40 border-t-white" />
-                                            <span>Dang gui...</span>
+                                            <span>Đang gửi...</span>
                                         </>
                                     ) : (
                                         <>
                                             <Send className="w-4 h-4" />
-                                            <span>Gui tin nhan</span>
+                                            <span>Gửi</span>
                                         </>
                                     )}
                                 </Button>
@@ -256,7 +256,7 @@ const Contact = () => {
 
                             <div className="mt-8 border-t border-slate-200 pt-8 dark:border-slate-800">
                                 <p className="mb-4 text-slate-600 dark:text-slate-300">
-                                    Hoac lien he truc tiep qua:
+                                    Hoặc liên hệ trực tiếp qua email hoặc điện thoại nếu bạn muốn phản hồi nhanh hơn hoặc có yêu cầu đặc biệt.
                                 </p>
                                 <div className="flex flex-wrap gap-3">
                                     <a
@@ -271,7 +271,7 @@ const Contact = () => {
                                         className="inline-flex items-center space-x-2 rounded-lg bg-emerald-600 px-4 py-2 text-sm text-white transition hover:bg-emerald-700"
                                     >
                                         <Phone className="w-4 h-4" />
-                                        <span>Goi dien</span>
+                                        <span>Gọi điện</span>
                                     </a>
                                 </div>
                             </div>
@@ -287,28 +287,28 @@ const Contact = () => {
                         <div className="text-center">
                             <div className="mb-2 text-2xl text-sky-600 dark:text-sky-400">24h</div>
                             <h4 className="mb-2 font-semibold text-slate-900 dark:text-white">
-                                Thoi gian phan hoi?
+                                Thời gian phản hồi
                             </h4>
                             <p className="text-sm text-slate-600 dark:text-slate-300">
-                                Thuong trong vong 24 gio, cuoi tuan co the lau hon.
+                                Thường trong vòng 24 giờ, cuối tuần có thể lâu hơn.
                             </p>
                         </div>
                         <div className="text-center">
                             <div className="mb-2 text-2xl text-sky-600 dark:text-sky-400">Quote</div>
                             <h4 className="mb-2 font-semibold text-slate-900 dark:text-white">
-                                Bao gia du an?
+                                Báo giá dự án
                             </h4>
                             <p className="text-sm text-slate-600 dark:text-slate-300">
-                                Bao gia chi tiet sau khi xac dinh requirement va scope.
+                                Báo giá chi tiết sau khi xác định requirement va scope.
                             </p>
                         </div>
                         <div className="text-center">
                             <div className="mb-2 text-2xl text-sky-600 dark:text-sky-400">Partnership</div>
                             <h4 className="mb-2 font-semibold text-slate-900 dark:text-white">
-                                Hop tac dai han?
+                                Hợp tác dài hạn?
                             </h4>
                             <p className="text-sm text-slate-600 dark:text-slate-300">
-                                Toi luon mo cho partnership va collaboration on-going.
+                                Tôi luôn mở cửa cho các cơ hội hợp tác và cộng tác kéo dài.
                             </p>
                         </div>
                     </div>
