@@ -44,13 +44,13 @@ const Contact = () => {
         {
             icon: Github,
             name: 'GitHub',
-            url: 'https://github.com/yourusername',
+            url: 'https://github.com/C-HaoNguyen',
             color: 'hover:bg-gray-800'
         },
         {
             icon: Linkedin,
             name: 'LinkedIn',
-            url: 'https://linkedin.com/in/yourprofile',
+            url: 'https://www.linkedin.com/in/nguyentancaohao/',
             color: 'hover:bg-blue-600'
         },
         {
